@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Set viewport meta tag to handle mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haukai Restaurant</title>    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Main header -->
+    <header class="header" role="banner">
+        <img src="images/welcome_image.jpg" alt="Welcome" class="welcome-image">
+        <h1 class="restaurant-name">
+            The <br>
+            Haukai <br>
+            Restaurant
+        </h1>
+    </header>
+    <!-- Navigation menu -->   
+    <nav class="topnav" role="navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="giftcards.html" class="active" aria-current="page">Gift Cards</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="stafflogin.html">Staff Log in</a>
+    </nav>
+    <!-- Main Content -->
+    <!-- Gift cards form -->
+    <main role="main">   
+        <section class="giftcards-section">
+            <h2 class="giftcards-heading">Gift your loved ones</h2>
+            <p>Choose your voucher and complete the form below to purchase.</p>
+            <br>
+            <form id="giftcards-form" role="form" action="#" method="post" onsubmit="showMessage()">
+                <label for="voucher">Select Voucher:</label>
+                <select id="voucher" name="voucher" required>
+                    <option value="" disabled selected hidden>Choose an option</option>
+                    <option value="25">$25 Voucher</option>
+                    <option value="50">$50 Voucher</option>
+                    <option value="100">$100 Voucher</option>
+                    <option value="200">$200 Voucher</option>
+                    <option value="300">$300 Voucher</option>
+                    <option value="500">$500 Voucher</option>                    
+                </select><br><br>
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="card_number">Card Number:</label>
+                <input type="text" id="card_number" name="card_number" required><br><br>
+                
+                <label for="expiry_date">Expiry Date:</label>
+                <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YYYY" required><br><br>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br><br>
+                
+                <input type="submit" value="Purchase Gift Card">
+            </form>
+        </section>
+    </main>
+    <!-- Social Media Footer -->
+    <footer class="social-footer" role="contentinfo">
+        <div class="social-icons">
+            <a href="https://www.facebook.com" class="social-link">Facebook</a>
+            <a href="https://www.instagram.com" class="social-link">Instagram</a>
+            <a href="mailto:thehaukairestaurantbusiness@gmail.com" class="social-link">Email</a>
+        </div>
+    </footer>
+    <!-- Main Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-left">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>1 Island Street,</p>
+                <p>Kerikeri, Bay of Islands, NZ</p>
+                <p>Email: thehaukairestaurantbusiness@gmail.com</p>
+                <p>Phone: 09 401 4019</p>
+            </div>
+        </div>
+        <div class="footer-middle"> 
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 9am-9pm</p>
+                <p>Sat-Sun: 10am-11pm</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>© Copyright 2024 by The Haukai Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
