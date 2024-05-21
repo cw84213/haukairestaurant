@@ -1,0 +1,553 @@
+/* Universal box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Adjustments for the main section */
+main {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;    
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding-top: 50px; 
+}
+
+/* Set the size of the body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Style the header */
+.header {
+    background-color: #778899;
+    color: #000000;
+    text-align: right;
+    padding: 40px;
+    overflow: hidden;
+    border-bottom: 4px solid #000;
+}
+
+/* Style the welcome image */
+.welcome-image {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Style the restaurant name */
+.restaurant-name {
+    font-family: 'Papyrus', Fantasy;
+    font-size: 30px;
+    color: #000000;
+    text-align: right;
+    overflow: hidden;
+    border-bottom: 4px solid #000;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    font-family: 'helvetica', san-serif;
+    overflow: hidden;
+    background-color: #2F4F4F;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: inline-block;
+    color: #FFFAF0;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Change background color for topnav on hover */
+.topnav a:hover {
+    background-color: #555;
+}
+
+/* Adjustments for the main section */
+.row {
+    text-align: center;
+}
+
+.column {
+    text-align: center;
+    padding-bottom: 50px; 
+}
+
+/* CSS for the images */
+.restaurant-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;       
+}
+
+.about-us-heading {
+    font-size: 40px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
+    font-weight: bold; 
+    color: #FFF; 
+}
+
+.menu-heading {
+    font-size: 40px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
+    font-weight: bold; 
+    color: #FFF; 
+}
+
+/* CSS for menu sections container */
+.menu-container {
+    text-align: center;
+}
+
+/* CSS for menu sections */
+.menu-section {
+    width: calc(50% - 20px);
+    height: auto;
+    margin-bottom: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* CSS for menu items */
+.menu-item {
+    background-color: rgb(8, 94, 82);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* CSS for menu headings */
+.menu-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* CSS for individual menu items */
+.menu-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 0.6em !important;
+    color: #11df90;
+    margin-top: 0.5em;
+}
+
+.rawena-image {     
+    top: 10px; 
+    right: 0; 
+    width: 20%; 
+    height: 20%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.seafoodchowder-image {         
+    top: 10px; 
+    right: 0; 
+    width: 20%; 
+    height: 20%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.banoffeepie-image {         
+    top: 10px; 
+    right: 0; 
+    width: 20%; 
+    height: 20%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.beverages-image {         
+    top: 10px; 
+    right: 0; 
+    width: 20%; 
+    height: 20%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.reservation-heading {
+    font-size: 40px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
+    font-weight: bold; 
+    color: #FFF; 
+}
+
+/* CSS for the reservation section */
+.reservation-section {
+    margin: 0 auto; 
+    width: 80%; 
+    height: auto; 
+    text-align: center; 
+    overflow: hidden; 
+}
+
+.reservation-form-iframe {
+    width: 100%; 
+    max-width: 800px; 
+    border: none;
+    height: 500px; 
+}
+
+.giftcards-heading {
+    font-size: 40px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
+    font-weight: bold; 
+    color: #FFF; 
+}
+
+/* CSS for the login section */
+.login-section {
+    margin-bottom: 30px;
+}
+
+/* CSS for the shift swap request section */
+.shift-swap-request {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+/* CSS for the shift swap request button */
+.shift-swap-request button {
+    background-color: #2F4F4F;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.shift-swap-request button:hover {
+    background-color: #555;
+}
+
+/* CSS for the calendar section */
+.calendar-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+/* CSS for the calendar iframe */
+.calendar-iframe {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+/* CSS for the login error message */
+#login-error {
+    color: red;
+    display: none;
+}
+
+/* CSS for the calendar container */
+.calendar-container {
+    width: 100%;
+    height: 800px;
+}
+
+/* CSS for the login error iframe */
+.calendar-iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* CSS for the map container */
+.map-container {
+    width: 50%;
+    height: 400px; 
+}
+
+
+/* CSS for the shift swap request section */
+.shift-swap-request {
+    margin-top: 30px; 
+    text-align: center; 
+}
+
+/* CSS for the shift swap request and submit button */
+.request-shift-swap-button,
+#submit-request-btn {
+    background-color: #FF0000; 
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; 
+    display: block;
+    margin: 30px auto 50px; 
+}
+
+/* CSS for shift swap request form */
+.shift-swap-form {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.shift-swap-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.shift-swap-form input[type="text"],
+.shift-swap-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* CSS for the gift cards section */
+.giftcards-section {
+    width: 90%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px; 
+    box-sizing: border-box;     
+}
+
+/* CSS for the gift cards form */
+#giftcards-form {
+    text-align: left; 
+}
+
+/* Style for form labels */
+#giftcards-form label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* CSS for form inputs */
+#giftcards-form input[type="text"],
+#giftcards-form input[type="email"],
+#giftcards-form select {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+/* CSS for the submit button */
+#giftcards-form input[type="submit"] {
+    background-color: #200863; 
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive;
+    display: block; 
+    margin: 30px auto 50px; 
+}
+
+/* CSS for Change background color on hover */
+#giftcards-form input[type="submit"]:hover {
+    background-color: #040331;
+}
+
+/* CSS for contact h2 section */
+.contact-section h2 {
+    font-size: 40px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
+    font-weight: bold; 
+    color: #FFF; 
+}
+.contact-section input[type="submit"] {
+    background-color: #200863; 
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; 
+    font-family: 'Lucida Handwriting', 'Lucida Sans', cursive;
+    display: inline-block; 
+    margin: 30px 10px 50px; 
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #040331; 
+}
+
+/* CSS for the contact section */
+.contact-section {
+    width: 80%;     
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+/* CSS for the map container */
+#map-container {
+    position: absolute;      
+    right: 0; 
+    width: 40%; 
+    height: 80%;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+/* CSS for the map iframe */
+#map-container iframe {
+    width: 400px; 
+    height: 300px; 
+    border: 0;
+}
+
+
+/* CSS the social media footer */
+.social-footer {
+    text-align: center;
+    background-color: #189dbe;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.social-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: border-color 0.3s;
+}
+
+/* Add border around social links */
+.social-link:hover {
+    border-bottom: 2px solid #666;
+}
+
+/* CSS for the main footer */
+.footer {
+    display: flex;
+    font-family: 'helvetica', sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    background-color: #2F4F4F;
+    color: #FFFAF0;
+    padding: 1em;
+    border-top: 4px solid #000;
+}
+
+/* CSS for the left side of the footer */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+/* CSS for the middle of the footer */
+.footer-middle {
+    flex: 1;
+    text-align: center;
+}
+
+/* CSS for the right side of the footer */
+.footer-right {
+    flex: 1;
+    text-align: right;
+    align-self: flex-end;
+}
+
+/* Add custom CSS for mobile responsiveness */
+@media only screen and (max-width: 430px) and (max-height: 932px) {
+
+    /* Adjust header layout */
+    .header {
+        text-align: center;
+    }
+    /* Adjust welcome image layout */
+    .welcome-image {
+        width: 35vw;
+        display: block;
+        margin: auto;
+        max-width: 200px;
+        height: auto;
+    }
+    /* Adjust hrestaurant name */
+    .restaurant-name {
+        font-size: 1.2em; 
+    }
+    /* Adjust menu item layout */
+    .menu-item {
+        width: 100%;
+    }  
+    /* Adjust map container on smaller screens */
+    #map-container {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }  
+    /* Prevent rotation from affecting layout */
+    @media screen and (orientation: landscape) {
+        body {
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+        }
+        #map-container {            
+            width: 100vw;
+            height: 100vh; 
+            margin: 0;
+            overflow: auto; 
+        }
+    }
+    /* Adjust footer layout */
+    .footer {
+        text-align: center;
+    }
+}
+/* Key navigation */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+#skip-links {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 9999;
+    background-color: #778899; 
+    padding: 10px;
+    border-radius: 5px; 
+    border: none; 
+    outline: none; 
+}
+
+#skip-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skip-links ul li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+#skip-links a {
+    color: #fff; 
+    text-decoration: none;
+}
+
