@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Set viewport meta tag to handle mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>The Haukai Restaurant</title>    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="header" role="banner">
+        <img src="images/welcome_image.jpg" alt="Welcome" class="welcome-image">
+        <h1 class="restaurant-name">
+            The <br>
+            Haukai <br>
+            Restaurant
+        </h1>
+    </header>
+    <!-- Navigation menu -->
+    <nav class="topnav" role="navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="giftcards.html">Gift Cards</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="stafflogin.html" class="active" aria-current="page">Staff Log in</a>
+    </nav>
+    <!-- Main content -->
+    <main role="main">        
+        <section class="login-section">
+            <h2>Staff Login</h2>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br><br>
+                
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+                
+            <button onclick="login()">Login</button>
+            <p id="login-error" style="color: red; display: none;">Invalid username or password</p>
+        </section>
+    
+        <div id="calendar-container" class="calendar-section"></div>
+        
+        <div id="shift-swap-request" class="shift-swap-request" style="display: none;">
+            <h2>Shift Swap Request</h2>
+            <form id="shift-swap-form" class="shift-swap-form">
+                <label for="current-shift">Current Shift:</label>
+            <input type="text" id="current-shift" name="current-shift" required><br><br>
+                
+                <label for="desired-shift">Desired Shift:</label>
+                <input type="text" id="desired-shift" name="desired-shift" required><br><br>
+                
+                <label for="reason">Reason for Swap:</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+                
+                <button type="submit" id="submit-request-btn" class="shift-swap-button">Submit Request</button>
+            </form>
+        </div>
+    </main>
+    <!-- Social Media Footer -->
+    <footer class="social-footer" role="contentinfo">
+        <div class="social-icons">
+            <a href="https://www.facebook.com" class="social-link">Facebook</a>
+            <a href="https://www.instagram.com" class="social-link">Instagram</a>
+            <a href="mailto:thehaukairestaurantbusiness@gmail.com" class="social-link">Email</a>
+        </div>
+    </footer>
+    <!-- Main Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-left">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>1 Island Street,</p>
+                <p>Kerikeri, Bay of Islands, NZ</p>
+                <p>Email: thehaukairestaurantbusiness@gmail.com</p>
+                <p>Phone: 09 401 4019</p>
+            </div>
+        </div>
+        <div class="footer-middle"> 
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 9am-9pm</p>
+                <p>Sat-Sun: 10am-11pm</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>© Copyright 2024 by The Haukai Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- stafflogin.js script -->
+    <script src="js/login.js"></script>
+</body>
+</html>
+
+
