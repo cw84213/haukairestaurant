@@ -81,13 +81,14 @@ body {
     padding-bottom: 50px; 
 }
 
-/* CSS for the images */
+/* CSS for the restarant image */
 .restaurant-image {
     max-width: 100%;
     height: auto;
     margin-top: 20px;       
 }
 
+/* CSS for the headings */
 .about-us-heading {
     font-size: 40px; 
     font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
@@ -129,7 +130,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* CSS for individual menu items */
+/* CSS for menu */
 .menu-item p {
     font-size: 16px;
     margin: 5px 0;
@@ -177,6 +178,7 @@ body {
     box-sizing: border-box; 
 }
 
+/* CSS for the reservation heading */
 .reservation-heading {
     font-size: 40px; 
     font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
@@ -193,6 +195,7 @@ body {
     overflow: hidden; 
 }
 
+/* CSS for the reservation form iframe */
 .reservation-form-iframe {
     width: 100%; 
     max-width: 800px; 
@@ -200,6 +203,7 @@ body {
     height: 500px; 
 }
 
+/* CSS for the giftcards heading */
 .giftcards-heading {
     font-size: 40px; 
     font-family: 'Lucida Handwriting', 'Lucida Sans', cursive; 
@@ -229,6 +233,7 @@ body {
     font-size: 16px;
 }
 
+/* CSS for the shift swap request hover*/
 .shift-swap-request button:hover {
     background-color: #555;
 }
@@ -271,7 +276,6 @@ body {
     width: 50%;
     height: 400px; 
 }
-
 
 /* CSS for the shift swap request section */
 .shift-swap-request {
@@ -326,13 +330,13 @@ body {
     text-align: left; 
 }
 
-/* Style for form labels */
+/* Style for giftcards form labels */
 #giftcards-form label {
     display: block; 
     margin-bottom: 10px; 
 }
 
-/* CSS for form inputs */
+/* CSS for giftcards form inputs */
 #giftcards-form input[type="text"],
 #giftcards-form input[type="email"],
 #giftcards-form select {
@@ -342,7 +346,7 @@ body {
     box-sizing: border-box;
 }
 
-/* CSS for the submit button */
+/* CSS for the giftcards submit button */
 #giftcards-form input[type="submit"] {
     background-color: #200863; 
     color: #FFF;
@@ -356,7 +360,7 @@ body {
     margin: 30px auto 50px; 
 }
 
-/* CSS for Change background color on hover */
+/* CSS for giftcards from submit colour on hover */
 #giftcards-form input[type="submit"]:hover {
     background-color: #040331;
 }
@@ -368,6 +372,8 @@ body {
     font-weight: bold; 
     color: #FFF; 
 }
+
+/* CSS for contact submit */
 .contact-section input[type="submit"] {
     background-color: #200863; 
     color: #FFF;
@@ -381,6 +387,7 @@ body {
     margin: 30px 10px 50px; 
 }
 
+/* CSS for contact submit colour on hover */
 .contact-section input[type="submit"]:hover {
     background-color: #040331; 
 }
@@ -425,7 +432,6 @@ body {
     transition: border-color 0.3s;
 }
 
-/* Add border around social links */
 .social-link:hover {
     border-bottom: 2px solid #666;
 }
@@ -511,6 +517,7 @@ body {
         text-align: center;
     }
 }
+
 /* Key navigation */
 .sr-only {
     position: absolute;

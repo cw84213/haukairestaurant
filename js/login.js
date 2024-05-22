@@ -1,3 +1,5 @@
+// login.js
+// Function to login
 function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -12,11 +14,11 @@ function login() {
         hideShiftSwapButton();
     }
 }
-
+// Function to authenticate
 function authenticate(username, password) {    
     return username === 'haukaiemployees' && password === 'havealovelyday';
 }
-
+// Function to display the calendar
 function displayGoogleCalendar() {
     // Display Google Calendar using an iframe
     var calendarFrame = document.createElement('iframe');
@@ -37,7 +39,7 @@ function displayGoogleCalendar() {
 function clearCalendar() {
     document.getElementById("calendar-container").innerHTML = ""; 
 }
-
+// Function show shift swap button
 function showShiftSwapButton() {
     var shiftSwapButton = document.createElement('button');
     shiftSwapButton.textContent = "Request Shift Swap";
@@ -49,18 +51,18 @@ function showShiftSwapButton() {
     var calendarContainer = document.getElementById("calendar-container");
     calendarContainer.parentNode.insertBefore(shiftSwapButton, calendarContainer.nextSibling);
 }
-
+// Function hide showshift swap button
 function hideShiftSwapButton() {
     var shiftSwapButton = document.getElementById('request-shift-swap-btn');
     if (shiftSwapButton) {
         shiftSwapButton.parentNode.removeChild(shiftSwapButton);
     }
 }
-
+// Function submit shift swap button
 function submitShiftSwapRequest() {
     displayConfirmationMessage();
 }
-
+// Function display confirmation message
 function displayConfirmationMessage() {
     // Create a pop-up message to inform the user that the request has been sent
     alert("Your shift swap request has been sent to the manager for approval.");

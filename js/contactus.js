@@ -1,3 +1,5 @@
+// contactus.js
+// Function to show pop-up message
 function showMessage() {
     // Collecting form field values
     var name = document.getElementById("name").value;

@@ -1,3 +1,4 @@
+// giftcards.js
 // Function to show pop-up message
 function showPopup(message) {
     // Create a div element for the pop-up
@@ -12,7 +13,7 @@ function showPopup(message) {
     var closeButton = document.createElement('button');
     closeButton.textContent = 'Close';
     closeButton.addEventListener('click', function() {
-        popup.remove(); // Remove the pop-up when the close button is clicked
+        popup.remove(); 
     });
     
     // Append message and close button to the pop-up
